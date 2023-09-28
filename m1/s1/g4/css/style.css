@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+body{margin: 15px;
+background-image: url(../assets/img/sfondo.png);box-sizing: border-box; 
+font-size: 1rem ;
+background-color: white;
+font-family: "Poppins", sans-serif;
+}
+
+
+h1,h2,h3 {font-family: 'Times New Roman', Times, serif;
+}
+main{background-color: white;}
+
+h1{font-size: 35px, bolder;
+display:block;
+padding: 20px;}
+
+
+.header{padding: 25px 0;
+margin-bottom: 20px;
+background: linear-gradient(rgb(0,160,198)
+rgba(3,109,134,1)); 
+}
+
+aside{background-color: white;}
+
+
+.video {border-radius: 30px;
+height: auto;}
+
+footer{background: linear-gradient(rgb(0,160,198)
+    rgba(3,109,134,1)); 
+}
+
