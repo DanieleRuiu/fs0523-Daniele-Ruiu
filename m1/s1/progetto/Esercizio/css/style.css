@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&family=Poppins:ital,wght@0,100;0,400;0,700;1,200&family=Roboto+Slab:wght@600&display=swap');
+
+:root{
+    box-sizing: border-box;
+}
+
+
+
+.button{background-color: red;
+        border-radius: 10%;
+        width: 4cm;
+        height: 1.5cm;
+        font-size: 1.3rem;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    padding: 15px;
+    color: #393d41;
+    width: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+
+}
+
+h3{
+    font-size:1.4rem;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 2em 1.5em;
+    min-width: 500px;
+    width: auto;
+}
+
+header div img{
+    margin:auto;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.art1{
+    margin:5em
+}
+
+.art5{
+    background-color: red;
+    width: auto;
+    min-width: 500px;
+    
+}
+
+.art5 h2 {
+    color: white; 
+    margin-top: 2em  
+}
+
+.art5 p{
+    color:white
+}
+
+.mario{
+    font-weight: 700;
+}
+
+.art1, .art2, .art5, .art3, .art4{
+    text-align: center;
+    margin-top: 3em;
+    
+}
+
+
+.art3 img{
+    border-radius: 100%;
+    width: 70%;
+}
+
+.square img{
+    width: 100%;
+   margin: 1em;
+   
+   
+}
+
+.square{
+    text-align: center;
+
+}
+
+.border{
+    
+}
+
+footer{
+    background-color: #25a2c3;
+    text-align: center;
+    min-width: 500px;
+    height: 300px;
+    color: #c8e7f0;
+    width: auto;
+    
+}
+
+footer h1{
+    padding-top: 40px;
+    color: white;
+}
+
+.tel{
+    display: block;
+}
+
+.mail{
+    display: block;
+}
+
+.address{
+    display: block;
+}
+
+hr{
+    color: rgb(223, 211, 211);
+    width: 30%;
+    size: 5;
+}
