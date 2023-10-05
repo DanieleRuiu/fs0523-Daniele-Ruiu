@@ -113,16 +113,31 @@ let characters = []
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "characters" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
+console.log
+for(let i = 0; i < starWarsCharacters.length ; i++){
 
-for(let i = 0; i < starWarsCharacters.length ; i++)
-{document.write ('i')}
+let personaggioCorrente starWarsCharacters[i];
+
+characters.push(personaggioCorrente.name)
+}
+
+console.log (characters);
+
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
-let femaleCharacters = [
-starWarsCharacters.find (gender => starWarsCharacters.gender === 'female')]
-{console.log (femaleCharacters)}
+let femaleCharacters = []
+
+for(let i = 0; i < starWarsCharacters.length ; i++)
+
+let personaggioCorrente=starWarsCharacters[i];
+
+if (personaggioCorrente.gender == 'female'){
+
+femaleCharacters.push (personaggioCorrente)
+}
+
 
 
 
@@ -135,17 +150,40 @@ let eyeColor = {
   yellow : [],
   brown : [],
   red : [],
-  blue-gray : [],
+  'blue-gray' : []
 }
 
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
+for(let i = 0; i < starWarsCharacters.length ; i++) {
+
+  let personaggioCorrente=starWarsCharacters[i];
+
+switch (personaggioCorrente.eyecolor){
+  case 'blue':
+    eyecolor.blue.push(personaggioCorrente)
+    break;
+}
+}
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+let crewMass = 0;
+let x=0
+while (x < starWarsCharacters.length){
+
+  let personaggioCorrente=starWarsCharacters[x];
+
+  crewMass += personaggioCorrente.mass
+
+  x++;
+
+  console.log(crewMass)
+ 
+}
 
 
 /* ESERCIZIO 7
