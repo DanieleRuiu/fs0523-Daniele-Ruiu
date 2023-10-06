@@ -192,7 +192,7 @@ const positions = charactersArray.map(char => {
     case 'z':
       return 26;
     default:
-      return 0; // Carattere non trovato nell'alfabeto italiano
+      return 0; 
   }
 });
 
