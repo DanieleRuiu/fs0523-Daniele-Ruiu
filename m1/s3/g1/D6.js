@@ -3,9 +3,11 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
   function concatena(stringa1,stringa2) {
-  let primeDueLettere = stringa1.slice (0,2);
-  let ultimeTreLettere = stringa2.slice (-3);
-  return risultato = (primeDuelettere + ultimeTreLettere)}
+  let stringa1 = stringa1.slice (0,2);
+  let stringa2 = stringa2.slice (-3);
+  return (stringa1 + stringa2). toUppercase();
+  }
+ console.log(('hello', 'world'))
   
 
 
@@ -13,7 +15,14 @@
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-
+function ramdomArray (){
+  let arr = [];
+  for(let i=0; i<10;i++){
+  arr.push(Math.floor (random()* 100) + 1)
+}
+return arr
+}
+console.log(ramdomArray());
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
@@ -65,7 +74,11 @@ console.log(lunghezze);
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
-*/ 
+*/ function oddArray (){
+  let arr = [ ]
+  for (let i = 1,; i<100; i++)
+  if ( i % 2 == 1) arr.pus
+}
 
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
