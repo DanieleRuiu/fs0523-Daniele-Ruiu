@@ -1,0 +1,35 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 3cm;
+    background-color: rgba(95, 157, 157, 0.807);
+}
+h1{
+    color: rgba(76, 76, 141, 0.622);
+    font-size: 300%;
+    font-weight: 700;
+    
+}
+
+input{
+    font-size: larger;
+    background-color: beige;
+    border-color: rgb(17, 170, 27);
+    width: 10cm;
+    height: 1cm;
+    border-radius: 5%;
+    
+    
+}
+
+    
+
+button {
+    background-color:rgba(71, 41, 41, 0.808);
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 5cm;
+    border-radius: 5%;
+}
+
