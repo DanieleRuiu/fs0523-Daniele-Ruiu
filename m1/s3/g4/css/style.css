@@ -1,0 +1,51 @@
+
+body{
+    background-color: rgba(63, 112, 114, 0.229);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cella {
+    width: 50px;
+    height: 35px;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background-color:beige;
+    margin: 5px;
+    border-radius: 100%;
+    padding: 10px;
+
+  }
+
+  #tabellone{
+   text-align: center; 
+   
+
+  }
+
+  #estraiNumero{
+    padding: 20px;
+    margin: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+  
+    
+  }
+
+  .buttonContainer{
+    text-align: center;
+  }
+
+
+  h1{font-size:400%;
+text-align: center;
+}
+
+footer{
+  text-align: end;
+  margin-top: 430px;
+  font-size: x-small;
+  color:blue
+}
