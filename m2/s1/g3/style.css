@@ -1,0 +1,159 @@
+
+body {
+    box-sizing: border-box;
+    width: auto;
+}
+
+nav {
+    background-color:#fef7e2; 
+    box-sizing: border-box;
+
+  }
+  
+  
+  .menu {
+    list-style-type: none; 
+    margin: 0; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  }
+
+  ul {display: flex;
+    list-style: none;
+    justify-content: center
+    
+}
+  
+  .list {
+    margin: 15px;
+    padding: 10px ;
+    background-color:#ffdf7f ;
+    border-radius: 40%;
+    text-align: center;
+    width: 200px;
+
+  }
+  
+ 
+  .list a {
+    text-decoration: none; 
+    color:#742305; 
+
+  }
+  
+  
+  .list-logo {
+    text-decoration: none; 
+    margin: 15px;
+    padding: 10px ;
+    background-color:#ffdf7f ;
+    border-radius: 40%;
+    text-align: center;
+    width: 200px;
+    
+
+  }
+ 
+  
+  .list-logo img {
+    width: 50px; 
+    height: auto; 
+  }
+  
+  
+  .list a:hover {
+    color: #FFA500; 
+  }
+  
+  .h1 {
+    font-size:3em;
+    font-weight: 700;
+    color: #742305;
+    margin-top: 1cm;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    background-color:rgba(254,247,226,255) ;
+  }
+  
+  .image {
+    text-align: center; 
+    padding: 15px; 
+    width: 200px; 
+  }
+  
+  .image img {
+    max-width: 100%; 
+    border-radius: 20%;
+  }
+  
+  
+  .image button {
+    background-color:#ffdf7f ; 
+    color:#915124 ; 
+    font-weight: 700;
+    border: none; 
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 40%;
+  }
+  
+  
+  .image button:hover {
+    background-color: #0056b3; 
+  }
+  .h2 {
+    font-size: x-large;
+    font-weight: 700;
+    color: #742305;
+    margin-bottom: 1cm;
+  }
+
+  
+
+  .aside {
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgba(254,247,226,255) ; 
+    border-radius: 5%;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .aside h4 {
+    font-size: larger; 
+    line-height: 1.4;
+    color: #742305;
+    font-weight: 700;
+
+  }
+  
+  .aside p {
+    line-height: 1.6; 
+  }
+  
+  .aside img {
+    max-width: 100%; 
+    margin-top: 1cm;
+    
+  }
+  /* Stile predefinito per dispositivi non tablet */
+
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+   
+    body {
+      font-size: 16px; 
+    }
+    
+    .container {
+      width: 90%; 
+    }
+  
+   
+  }
+  
