@@ -7,4 +7,49 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+.parole i {
+    display: inline-block;
+    opacity: 0;
+    animation: changeWord 9s linear infinite;
+    font-style: oblique;
+    font-weight: 600;
+    
+}
+
+.parole .web {
+    animation-delay: 0s;
+    color: blue;
+}
+
+.parole .app {
+    animation-delay: 3s;
+    color: brown;
+
+}
+
+.parole .native {
+    animation-delay: 6s;
+    color:darkmagenta;
+}
+
+@keyframes changeWord {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#testoAlternato p{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+   text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+
+}
+
 
