@@ -1,146 +1,320 @@
-body{
+body {}
+
+#yellowHeader,
+.mainTitle {
+  
+
 
 }
 
-#yellowHeader ,.mainTitle  {
-    background-color: #ffc017;
-
-
-}
 
 
 #yellowHeader {
-    background-color: #ffc017;
-    border-bottom: 0.8px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding: 0.6cm;
+  background-color: #ffc017;
+  border-bottom: 0.8px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.6cm;
 }
 
 #yellowHeader .logo {
-    margin-right: auto;
+ margin-left: 300px;
+
 }
 
 #yellowHeader .menu {
-    list-style: none; 
-    display: flex;
-    
- gap: 40px; 
-    
+  list-style: none;
+  display: flex;
+  gap: 40px;
+
 }
 
 #yellowHeader .menu li a {
-    text-decoration: none; 
-    color: black; 
-    font-size: 25px; 
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
 }
 
 #yellowHeader .linkGetStarted {
-    
-    background-color: #191919;
-    color: white;
-    border-radius: 30px;
-    font-size: larger;
+
+  background-color: #191919;
+  color: white;
+  border-radius: 30px;
+  font-size: larger;
+
+
+}
+
+.m{
+  width: 550px;
+  height: 390px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.yellow{
+ position: relative;
+ height: 400px;
+ background-color: #ffc017;
+ 
 }
 
 
 
-.mainTitle{line-height: 50px;
-padding:6%
+
+.mainTitle {
+  line-height: 50px;
+  padding: 6%;
+  margin-left: 240px;
+
 }
 
 .stay {
-    font-size: 100px; 
-    font-weight:  
-    color: black
-  }
+  font-size: 100px;
+  font-weight;
+    color: black;
+}
 
- .discover{
-    margin-top: 0.8cm;
-    
-    font-size: larger;
+.discover {
+  margin-top: 0.8cm;
+
+  font-size: larger;
+}
+
+.linkStartReading {
+  text-decoration: none;
+  color: white;
+
+}
+
+button {
+  background-color: #191919;
+  width: 190px;
+  height: 40px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: larger;
+}
+
+
+/*-----------------------------------------------------------*/
+
+#mainContent{
+margin-top: 60px;
+  margin-left: 300px;
+}
+#mainContent h2{
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-wrap: wrap;
+ 
  }
 
- .linkStartReading{
-    text-decoration: none;
-    color:white;
-    
-    
- }
 
- button{
-    background-color: #191919;
-    width: 190px;
-    height:40px;
-    border-radius: 30px 30px 30px 30px;
-    font-size: larger;
- }
 
- #mainContent {
-    display: flex;
-    
-    align-items: center; 
-    padding: 20px;
-    margin-top: 2cm;
-  }
-  
-  .articles {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 20px;
-  }
-  
-  .content {
+.row {
+  display: flex;
+}
+
+.item {
+ 
     flex-basis: calc(33.33% - 80px);
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-
-  .article {
-    margin-bottom: 20px;
-    padding: 20px;
-    
-  }
-  
-  .content img { border-radius: 100%;}
-  .author {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  
-  .articleTitle {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  
-  .resume {
-    color: #666;
-  }
-
-  
-  date {
-    color: #888;
-  }
-  
+  margin: 5px;
+  padding: 10px;
  
+}
+
+
+
+#article .content .authorName{
+  color: black;
+
+
+}
+/*
+.content {
+  flex-basis: calc(33.33% - 80px);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+.content img {
+  border-radius: 100%;
+
+}
+
+.content .number{
+  color: grey;
+  font-weight: 600;
+  font-size: 50px;
   
-  
-  
+}
+
+.content h4{
+ font-size: 1.2em;
+ font-weight: 600;
+}
+
+
+date {
+  color: #888;
+}
+
+
+
+/*--------------------------------------------------*/
+
+
+hr {
+  border: 0.7px solid rgba(128, 128, 128, 0.233);
+  width: 100%;
+  margin: 40px;
+}
+
+/*----------------------------------------------------*/
+
+
+
+/* Reset del margin e padding predefinito */
+body, div, p, h4, date, img, svg {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stile per l'intero articolo */
+article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Stile per l'autore */
+.author {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Stile per l'immagine dell'autore */
+.authorImg img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Stile per l'immagine dell'articolo */
+.articleImg {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Stile per il titolo dell'articolo */
+.articleTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Stile per il riassunto */
+.resume {
+  color: #777;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Stile per la data */
+date {
+  color: #777;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+/*---------------------------------------------------*/
+
+
+.asideButton a {
+  text-decoration: none;
+  background-color: #88888877;
+  color: azure;
+  font-size:1rem;
+  border-radius: 15px;
+  border-style: none;
+  width: 100px;
  
+padding: 1px;
+
+}
+
+
+/*------------------------------------------------------*/
+
+.flex{
 
   
+display: flex;
+justify-content:space-between;
+align-items: flex-start;
+flex-wrap: wrap;}
+
+
+
+
+.columnLeft{
+  flex: 0 0 calc(50% - 10px); 
+  width: calc(50% - 10px);
+  margin-right: 20px; 
+  
+}
+.columnRight{ 
+  
+  flex: 0 0 calc(50% - 10px); 
+  width: calc(50% - 10px);
+}
+
+ .columnLeft, .columnRight {
+  margin-top: 80px;
+}
+
+.buttonFooter{background-color: white;
+  border-style: none;
+
+}
+
+
+
+
+.footer{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+ 
+}
+
+.asideButton{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li{list-style: none;
+  line-height: 1px;
+  flex: 0 0 calc(33.33% - 10px);
+  margin-bottom: 30px;
+  }
