@@ -100,6 +100,7 @@
     
    
 .postit:hover {
-    transform: scale(1.2) rotate(0deg);
+    transform: scale(1.4) rotate(0deg);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
