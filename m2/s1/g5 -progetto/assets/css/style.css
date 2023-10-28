@@ -1,42 +1,46 @@
 body {}
 
-#yellowHeader,
-.mainTitle {
-  
 
-
-}
 
 
 
 #yellowHeader {
   background-color: #ffc017;
   border-bottom: 0.8px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
   position: sticky;
   top: 0;
   z-index: 1;
   padding: 0.6cm;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #yellowHeader .logo {
  margin-left: 300px;
+ margin-right: 10px;
+
 
 }
 
 #yellowHeader .menu {
-  list-style: none;
+  width: 500px;
+    list-style: none;
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  
+
+  gap: 9px;
 
 }
 
 #yellowHeader .menu li a {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 19px;
 }
 
 #yellowHeader .linkGetStarted {
@@ -44,7 +48,8 @@ body {}
   background-color: #191919;
   color: white;
   border-radius: 30px;
-  font-size: larger;
+  font-size: 15px;
+  width: 190px;
 
 
 }
@@ -88,6 +93,10 @@ body {}
 .linkStartReading {
   text-decoration: none;
   color: white;
+  
+  
+ 
+
 
 }
 
@@ -100,7 +109,7 @@ button {
 }
 
 
-/*-----------------------------------------------------------*/
+
 
 #mainContent{
 margin-top: 60px;
@@ -133,20 +142,12 @@ margin-top: 60px;
 
 
 
-#article .content .authorName{
+#articles .content .authorName{
   color: black;
 
 
 }
-/*
-.content {
-  flex-basis: calc(33.33% - 80px);
-  margin: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
+
 
 .content img {
   border-radius: 100%;
@@ -172,7 +173,7 @@ date {
 
 
 
-/*--------------------------------------------------*/
+
 
 
 hr {
@@ -181,17 +182,17 @@ hr {
   margin: 40px;
 }
 
-/*----------------------------------------------------*/
 
 
 
-/* Reset del margin e padding predefinito */
+
+
 body, div, p, h4, date, img, svg {
   margin: 0;
   padding: 0;
 }
 
-/* Stile per l'intero articolo */
+
 article {
   background-color: #fff;
   border-radius: 8px;
@@ -200,13 +201,13 @@ article {
   margin: 20px;
 }
 
-/* Stile per l'autore */
+
 .author {
   color: #333;
   font-weight: bold;
 }
 
-/* Stile per l'immagine dell'autore */
+
 .authorImg img {
   width: 30px;
   height: 30px;
@@ -214,28 +215,26 @@ article {
   margin-right: 10px;
 }
 
-/* Stile per l'immagine dell'articolo */
+
 .articleImg {
   max-width: 100%;
   border-radius: 8px;
   margin: 20px 0;
 }
 
-/* Stile per il titolo dell'articolo */
+
 .articleTitle {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
 }
 
-/* Stile per il riassunto */
 .resume {
   color: #777;
   font-size: 1rem;
   margin: 10px 0;
 }
 
-/* Stile per la data */
 date {
   color: #777;
   font-size: 0.9rem;
@@ -245,7 +244,7 @@ date {
 
 
 
-/*---------------------------------------------------*/
+
 
 
 .asideButton a {
@@ -261,8 +260,6 @@ padding: 1px;
 
 }
 
-
-/*------------------------------------------------------*/
 
 .flex{
 
@@ -313,8 +310,84 @@ flex-wrap: wrap;}
   justify-content: space-between;
 }
 
-li{list-style: none;
+.asideButton  h2{
+ 
+  }
+
+.asideButton  li{list-style: none;
   line-height: 1px;
   flex: 0 0 calc(33.33% - 10px);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   }
+
+ .imgFloat{
+  float: left;
+}
+
+
+
+
+.content div{
+  display: inline-block; 
+  width: 130px;
+  
+  text-align: center;
+}
+
+.number{
+  float:left
+}
+
+
+
+
+article{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.textArt{
+  display: inline-block;
+  width: 400px;
+  
+  flex: 1;
+ 
+ 
+
+
+}
+
+
+.articleImg{
+ margin-left: 50px;
+ margin-top: 15px;
+width: 300px;
+  
+}
+.flex{
+  width: 100%;
+}
+
+
+.columnRight{
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
