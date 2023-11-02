@@ -1,0 +1,20 @@
+$button-colors: (
+  primary: #0e6cff,
+  secondary: #ff8700,
+  success: #4caf50,
+);
+
+@each $color-name, $color in $button-colors {
+  .btn-#{$color-name} {
+    background-color: $color;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+
+    &:hover {
+      
+      background-color: lighten($color, 10%); 
+    }
+  }
+}

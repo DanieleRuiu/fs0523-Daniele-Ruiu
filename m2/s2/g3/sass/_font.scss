@@ -1,0 +1,16 @@
+
+$font-family: 'Arial', sans-serif;
+
+
+$font-size-small: 14px;
+$font-size-normal: 16px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+$font-size-extra-large: 32px;
+
+
+@mixin title-big {
+  font-size: $font-size-extra-large;
+  font-weight: bold;
+
+}

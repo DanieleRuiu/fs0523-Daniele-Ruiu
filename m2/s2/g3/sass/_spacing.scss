@@ -1,0 +1,16 @@
+$spacings: (sm: 0.25rem, normal: 0.5rem, md: 1rem, lg: 1.5rem, xl: 2rem, xxl: 3rem);
+$directions: (block, inline);
+
+@each $direction in $directions {
+  @each $spacing, $value in $spacings {
+    .padding-#{$direction}-#{$spacing} {
+      padding: $value;
+      display: $direction == 'block' ; block : inline;
+    }
+
+    .margin-#{$direction}-#{$spacing} {
+      margin: $value;
+      display: $direction == 'block' ; block : inline;
+    }
+  }
+}
