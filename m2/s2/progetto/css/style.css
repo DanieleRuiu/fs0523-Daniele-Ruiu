@@ -1,0 +1,106 @@
+h3 {
+  color: white;
+}
+
+header {
+  background-color: black;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+.nav-link:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.navbar-avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  padding-right: 1cm;
+}
+.navbar-avatar svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+.navbar-avatar a {
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+button.btn.btn-outline-success {
+  border-color: white;
+  color: white;
+  background-color: black;
+  margin-right: 10px;
+}
+
+button.navbar-toggler {
+  margin-left: auto;
+  position: absolute;
+  right: 15px;
+  padding-right: 1cm;
+}
+
+button.btn.btn-outline-light {
+  margin-right: 400px;
+}
+
+.carousel-container {
+  gap: 0;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carousel > .carousel-inner > .carousel-item > .row > .col-4 {
+  margin-bottom: 5px;
+  --bs-gutter-x: 0rem;
+}
+
+.btn.btn-outline-light {
+  border-radius: 0;
+}
+
+.footer1 {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 5px 0;
+  color: grey;
+}
+
+.footer1 svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  padding-left: 1cm;
+}/*# sourceMappingURL=style.css.map */

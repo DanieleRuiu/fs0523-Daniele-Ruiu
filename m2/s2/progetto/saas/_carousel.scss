@@ -1,0 +1,15 @@
+.carousel-container {
+    gap: 0;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.carousel > .carousel-inner > .carousel-item > .row > .col-4 {
+   
+   margin-bottom: 5px;
+    --bs-gutter-x: 0rem;
+}
