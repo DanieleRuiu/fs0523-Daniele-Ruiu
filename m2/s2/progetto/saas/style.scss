@@ -6,6 +6,7 @@
 @import"buttons";
 @import"footer";
 @import"img";
+@import "hr";
 
 
 
@@ -19,4 +20,27 @@ body{
     background-color: black;
     padding-left: 1cm;
 }
+  
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.containerMain {
+  text-align: center;
+}
+
+.card {
+  text-align: left; 
+  max-width: 540px;
+}
+
+.card-body {
+  text-align: left; 
+}
+
 

@@ -38,6 +38,13 @@ h4 {
   color: white;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 2cm;
+}
+
 button.btn.btn-outline-success {
   border-color: white;
   color: white;
@@ -75,14 +82,20 @@ button.btn.btn-outline-light {
   border-radius: 0;
 }
 
-.footer1 {
-  background-color: #000;
-  padding: 20px 0;
+.btn {
+  border-radius: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-footer p {
-  margin: 5px 0;
+.footer1 {
+  background-color: #000;
+  padding: 30px 0;
+}
+
+footer a {
   color: grey;
+  text-decoration: none;
 }
 
 .footer1 svg {
@@ -100,7 +113,34 @@ footer p {
   padding: 0;
 }
 
+hr {
+  border: 1px solid;
+  color: grey;
+}
+
 body {
   background-color: black;
   padding-left: 1cm;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.containerMain {
+  text-align: center;
+}
+
+.card {
+  text-align: left;
+  max-width: 540px;
+}
+
+.card-body {
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */

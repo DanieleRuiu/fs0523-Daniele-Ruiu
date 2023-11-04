@@ -3,3 +3,10 @@ $btn-border-radius: 0;
 .btn.btn-outline-light {
     border-radius: $btn-border-radius; 
 }
+
+        .btn {
+            border-radius: 0; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            
+          }
