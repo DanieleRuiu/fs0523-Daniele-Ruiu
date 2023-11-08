@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Library</h1>
+        <div class="row" id="bookList">
+            
+        </div>
+        <div class="mt-4">
+           
+            <button id="checkout" class="btn btn-primary mt-3">Buy Now</button>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            
+            $.get("https://striveschool-api.herokuapp.com/books", function(data) {
+                const bookList = data;
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+         
+                function createBookCard(book) {
+                    const card = `
+                        <div class="col-md-3 mb-3">
+                            <div class="card">
+                                <img src="${book.img}" class="card-img-top" alt="${book.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${book.title}</h5>
+                                    <p class="card-text">Prezzo: $${book.price}</p>
+                                    <button class="btn btn-success remove" data-id="${book.asin}">Remove</button>
+                                    <button class="btn btn-info add-to-cart" data-id="${book.asin}">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    return card;
+                }
+
+                bookList.forEach(book => {
+                    $('#bookList').append(createBookCard(book));
+                });
+
+                $('.add-to-cart').click(function() {
+                    const bookId = $(this).data('id');
+                    const book = bookList.find(book => book.asin === bookId);
+                    if (book) {
+                        cart.push(book);
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        updateCart();
+                    }
+                });
+
+               
+
+               
+
+                
+
+                $('#checkout').click(function() {
+                    
+                    cart.length = 0;
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCart();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
