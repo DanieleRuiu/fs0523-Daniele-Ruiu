@@ -1,4 +1,3 @@
-// Funzione per generare un numero casuale tra min (incluso) e max (escluso)
 function generaNumeroCasuale(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
