@@ -1,0 +1,15 @@
+h2 {
+  color: yellow;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}
+
+p {
+  color: red;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}/*# sourceMappingURL=componente2.component.css.map */

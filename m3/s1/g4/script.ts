@@ -48,3 +48,17 @@ async function call(): Promise<void> {
   console.log(data);
 }
 
+
+
+
+
+
+function fn1(a){
+    return function fn2(b){
+        return function fn3(c){
+            return a+b+c;
+        }
+    }
+}
+
+console.log(fn1(1)(2)(3));
