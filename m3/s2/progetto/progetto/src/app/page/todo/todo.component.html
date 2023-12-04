@@ -1,0 +1,16 @@
+<div>
+
+  <app-header></app-header>
+  <app-loading *ngIf="loading"></app-loading>
+
+  <ul *ngIf= "!loading" class="list">
+    <li *ngFor="let todo of todos">
+      {{todo.title}}
+      {{todo.completed}}
+    </li>
+
+  </ul>
+  
+  <!-- <input [(event.target)="title"] type="text"/><button (click)="addTodo"() ]>+</button> -->
+
+</div>

@@ -1,0 +1,21 @@
+.headerTodo{
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+  cursor: pointer;
+  &:hover{
+    color:purple;
+    
+  }
+
+}
+
+.containerTodo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+ }
+
