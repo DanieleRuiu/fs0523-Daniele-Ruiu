@@ -14,23 +14,16 @@ export interface Todo {
 })
 export class TodosService {
   // Inizializza un array di Todo con alcuni Todo di default.
-  todos: Todo[] = [
-    {
-      id: 0,
-      title: 'Fare la spesa',
-      completed: false,
-    },
-    {
-      id: 1,
-      title: 'Fare il bucato',
-      completed: false,
-    },
-    {
-      id: 2,
-      title: 'Fare il bagno al cane',
-      completed: false,
-    },
-  ];
+  todos: Todo[] = [];
+
+
+static instance: TodosService;
+
+static getInstance(): TodosService {
+  if (!TodosService.instance) {
+    TodosService.instance = new TodosService();
+  }
+  return TodosService.instance;}
 
   constructor() {}
 
@@ -79,7 +72,7 @@ export class TodosService {
   }
 
   // Definisce un metodo asincrono editTodo che modifica un Todo esistente nell'array di Todo dopo un ritardo di 2 secondi.
-  async editTodo(id: number, title: string, completed: boolean) {
+  async editTodo(id: number, completed: boolean ,title?: string) {
 
     await this.sleep();
 
@@ -89,9 +82,11 @@ export class TodosService {
       return;
     }
 
+
     this.todos[index] = {
+      ...this.todos[index],
       id,
-      title,
+      title:title? title: this.todos[index].title,
       completed,
     };
   }

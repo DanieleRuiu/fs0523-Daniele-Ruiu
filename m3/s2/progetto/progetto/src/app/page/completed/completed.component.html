@@ -1,7 +1,16 @@
 <div>
 
   <app-header></app-header>
-  <app-loading></app-loading>
+  <app-loading *ngIf="loading"></app-loading>
 
+  <div class="list">
+    <ul *ngIf="!loading" class="list">
+      <li *ngFor="let todo of todos">
+        {{todo.title}}
+
+      </li>
+
+    </ul>
   </div>
-
+</div>
+```

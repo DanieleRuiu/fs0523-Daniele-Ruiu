@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class CrudService {
 
   // chiamata get per prendere tutti i prodotti
-  private apiURL = 'https://dummyjson.com/products';
+  private apiURL: string = 'https://dummyjson.com/products';
 
   constructor(private http: HttpClient) { }
 

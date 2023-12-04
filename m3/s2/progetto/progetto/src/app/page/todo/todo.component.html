@@ -3,14 +3,25 @@
   <app-header></app-header>
   <app-loading *ngIf="loading"></app-loading>
 
-  <ul *ngIf= "!loading" class="list">
-    <li *ngFor="let todo of todos">
-      {{todo.title}}
-      {{todo.completed}}
-    </li>
+  <div class="ops" *ngIf="!checkAllTodos()">Opps, non ci sono task!</div>
 
-  </ul>
-  
-  <!-- <input [(event.target)="title"] type="text"/><button (click)="addTodo"() ]>+</button> -->
+  <form action="">
 
+    <ul *ngIf="!loading" class="list">
+
+      <li *ngFor="let todo of todos">
+        {{todo.title}}
+
+        <input (click)="updateToDo(todo.id,!todo.completed)" type="checkbox" [checked]=" todo.completed">
+
+      </li>
+
+    </ul>
+  </form>
+
+  <form class="input">
+
+    <input name="title" [(ngModel)]="title" type="text" /><button (click)="addTodo()">+</button>
+  </form>
 </div>
+
