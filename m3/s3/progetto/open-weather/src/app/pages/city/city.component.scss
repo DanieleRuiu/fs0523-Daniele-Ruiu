@@ -1,0 +1,47 @@
+.forecast-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-city {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forecast-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.forecast-favourites-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.forecast-data,
+.forecast-weather,
+.forecast-temp,
+.forecast-feels-like,
+.forecast-pressure,
+.forecast-humidity,
+.forecast-wind-speed,
+.forecast-wind-deg {
+  color: #007bff;
+  font-weight: bold;
+}
+
+

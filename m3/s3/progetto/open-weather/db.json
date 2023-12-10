@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$J7eKkQ6mlr4nKWdH4kfhTeIgeCAacxiw3xp0VGJeiFTA9jaUE1ZvW",
+      "nome": "mario",
+      "id": 1
+    },
+    {
+      "email": "prova@test.com",
+      "password": "$2a$10$GCD91yx.4xekVcwVIfCtuu0CFqaONrB0Z2zG0MjvlLp9vjFaaJz7q",
+      "nome": "Prova",
+      "id": 2
+    },
+    {
+      "email": "test@prova.com",
+      "password": "$2a$10$sxiy1dZ8U1QqXjRPmBOUneuCXnGBNMvDIWdQjfSpRROh5ix8xWq6G",
+      "nome": "Test",
+      "id": 3
+    },
+    {
+      "email": "da@gmail.com",
+      "password": "$2a$10$I0w8T2YZiO/yfzu4qLUh4eM8qWixRXcJ4H4tyQPAH.7J0fdniG98W",
+      "nome": "Da",
+      "id": 4
+    },
+    {
+      "email": "da@gmail.net",
+      "password": "$2a$10$D4y7ylqRRUOKSYdrQ6LejOZWysJlxOyh3TrPxc2Mps0cVlPnKR8oC",
+      "nome": "Daniele",
+      "id": 5
+    },
+    {
+      "email": "epicode@epicode.it",
+      "password": "$2a$10$twUD8SpcGbOJUwUhHSpZ1usr3ezS6IUYBQrTKJg6acFE/nLVLfMFm",
+      "nome": "Daniele",
+      "id": 6
+    },
+    {
+      "email": "daniele@aruba.com",
+      "password": "$2a$10$KJMv1YixlYv1KZBsqY.OTOnvLf1ak23/U8HIBVDj0m9059GkpEXKG",
+      "nome": "Daniele",
+      "id": 7
+    }
+  ],
+  "favourites": [
+    {
+      "userId": 4,
+      "cityName": "Roma",
+      "cityLat": "41.8933203",
+      "cityLon": "12.4829321",
+      "cityId": 3169070,
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "cityName": "Mogi das Cruzes",
+      "cityLat": "-23.5193994",
+      "cityLon": "-46.1899029",
+      "cityId": 3457001,
+      "id": 6
+    },
+    {
+      "userId": 6,
+      "cityName": "Le Grazie di Ancona",
+      "cityLat": "43.6170137",
+      "cityLon": "13.5170982",
+      "cityId": 3174915,
+      "id": 7
+    }
+  ]
+}

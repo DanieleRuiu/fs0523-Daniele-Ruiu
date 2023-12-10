@@ -1,0 +1,16 @@
+
+<div class="forecast-container">
+  <h2 class="forecast-city">{{ forecast?.city?.name }}</h2>
+  <div *ngFor="let forecast of forecast?.list || []" class="forecast-item">
+    <p><i class="bi bi-calendar3"></i> Data: <span class="forecast-data">{{ forecast.dt_txt }}</span></p>
+    <p><i class="bi bi-cloud-sun"></i> Meteo: <span class="forecast-weather">{{ forecast.weather[0].description }}</span></p>
+    <p><i class="bi bi-thermometer-half"></i> Temperatura: <span class="forecast-temp">{{ forecast.main.temp }}</span></p>
+    <p><i class="bi bi-thermometer-snow"></i> Temperatura percepita: <span class="forecast-feels-like">{{ forecast.main.feels_like }}</span></p>
+    <p><i class="bi bi-bar-chart"></i> Pressione: <span class="forecast-pressure">{{ forecast.main.pressure }}</span></p>
+    <p><i class="bi bi-droplet-half"></i> Umidità: <span class="forecast-humidity">{{ forecast.main.humidity }}</span></p>
+    <p><i class="bi bi-wind"></i> Velocità del vento: <span class="forecast-wind-speed">{{ forecast.wind.speed }}</span></p>
+    <p><i class="bi bi-compass"></i> Direzione del vento: <span class="forecast-wind-deg">{{ forecast.wind.deg }}</span></p>
+  </div>
+  <button (click)="addCityToFavourites()" class="forecast-favourites-btn"><i class="bi bi-heart-fill"></i> Add to favourites</button>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">

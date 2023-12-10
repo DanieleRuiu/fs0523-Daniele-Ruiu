@@ -1,0 +1,7 @@
+<div class="favourites-container">
+  <h1 class="favourites-title">Favourites</h1>
+  <div *ngFor="let favourite of favourites" class="favourite-item">
+    <span class="favourite-city">{{favourite.cityName}}</span>
+    <button (click)="removeFavourite(favourite.id)" class="favourite-remove-btn">Remove</button>
+  </div>
+</div>
